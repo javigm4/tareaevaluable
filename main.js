@@ -23,7 +23,8 @@ const ul = document.querySelector("ul");
 
 // el textcontent del span es lo que le metamos en pantalla del input
 
-boton.addEventListener("click", () => {
+boton.addEventListener("click", (prevenir) => {
+  prevenir.preventDefault();
   let textoInput = document.getElementById("input").value;
   let liCreado = document.createElement("li");
   liCreado.textContent = textoInput;
