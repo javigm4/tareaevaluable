@@ -1,5 +1,6 @@
 import "./style.css";
 
+// ------- IMPORTACIÓN  DE CLASES ------
 const container = document.querySelector("body > div");
 container.classList.add("container");
 
@@ -14,3 +15,17 @@ taskCount.classList.add("task-count");
 
 const boton = document.querySelector("body > div > div > form > button");
 boton.classList.add("btn-add");
+
+const ul = document.querySelector("ul");
+// --------- FUNCIONALIDAD ------
+
+// LI > P > SPAN + BUTTON (X )
+
+// el textcontent del span es lo que le metamos en pantalla del input
+
+boton.addEventListener("click", () => {
+  let textoInput = document.getElementById("input").value;
+  let liCreado = document.createElement("li");
+  liCreado.textContent(textoInput);
+  ul.appendChild(liCreado);
+});
