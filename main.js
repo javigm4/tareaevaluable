@@ -42,18 +42,10 @@ boton.addEventListener("click", (event) => {
   botonX.classList.add("btn-delete");
   botonX.textContent = "X";
 
-  console.log(pEmpty.value);
-
   pCreado.appendChild(spanCreado);
   pCreado.appendChild(botonX);
   liCreado.appendChild(pCreado);
 
   ul.appendChild(liCreado);
   nTareas++;
-
-  if (nTareas > 0) {
-    pEmpty.textContent = "";
-  } else {
-    pEmpty.textContent = "You have no pending tasks.";
-  }
 });
