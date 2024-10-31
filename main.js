@@ -34,6 +34,7 @@ boton.addEventListener("click", (event) => {
   let textoSpan = document.querySelector("input[type='text']").value;
   spanCreado.textContent = textoSpan;
   let botonX = document.createElement("button");
+  botonX.classList.add("btn-delete");
   botonX.textContent = "X";
 
   pCreado.appendChild(spanCreado);
