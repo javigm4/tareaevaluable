@@ -105,6 +105,7 @@ li p {
 
 .task-count {
   color: darkslategrey;
+  background-image: green;
 }
 
 span {
