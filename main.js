@@ -30,6 +30,7 @@ let nTareas = 0;
 
 boton.addEventListener("click", (event) => {
   event.preventDefault();
+
   let liCreado = document.createElement("li");
   let pCreado = document.createElement("p");
   let spanCreado = document.createElement("span");
@@ -40,6 +41,7 @@ boton.addEventListener("click", (event) => {
   let botonX = document.createElement("button");
   botonX.classList.add("btn-delete");
   botonX.textContent = "X";
+  pEmpty.textContent = "afkoas";
 
   pCreado.appendChild(spanCreado);
   pCreado.appendChild(botonX);
@@ -47,9 +49,4 @@ boton.addEventListener("click", (event) => {
 
   ul.appendChild(liCreado);
   nTareas++;
-
-  const numberOfTasks = document.querySelector(
-    "body > div > div:nth-of-type(5) > span:nth-of-type(2)"
-  );
-  numberOfTasks.textContent = nTareas;
 });
