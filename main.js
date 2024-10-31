@@ -26,6 +26,6 @@ const ul = document.querySelector("ul");
 boton.addEventListener("click", () => {
   let textoInput = document.getElementById("input").value;
   let liCreado = document.createElement("li");
-  liCreado.textContent(textoInput);
+  liCreado.textContent = textoInput;
   ul.appendChild(liCreado);
 });
