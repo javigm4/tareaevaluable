@@ -4,4 +4,10 @@ import "./style.css";
 
 /*se añade con .classList.add("")*/
 document.querySelector("body > div").classList.add("container");
-document.querySelector("body > div > div").classList.add("search");
+
+const search = document.querySelector("body > div > div");
+search.classList.add("search");
+
+/*document.querySelector("body > div > div").classList.add("search");
+document.querySelector("body >")
+document.querySelector("body > div > div.nth.of-type(2)").classList.add("li-container");*/
