@@ -12,19 +12,20 @@ liContainer.classList.add("li-container");
 
 const taskCount = document.querySelector("body > div > div:nth-of-type(6)");
 taskCount.classList.add("task-count");
+const pContadorTareas = document.querySelector(
+  "body > div > div:nth-of-type(6) >span:nth-of-type(2)"
+);
+
+const emptyTasks = document.querySelector(
+  "body > div > div:nth-of-type(5) > p"
+);
 
 const boton = document.querySelector("body > div > div > form > button");
 boton.classList.add("btn-add");
 
 const ul = document.querySelector("ul");
 
-const noTasks = document.querySelector("body > div > div:nth-of-type(4) p");
-const pContadorTareas = document.querySelector(
-  "body > div > div:nth-of-type(6) span:nth-of-type(2)"
-);
-
 // --------- FUNCIONALIDAD ------
-
 // LI > P > SPAN + BUTTON (X )
 
 // el textcontent del span es lo que le metamos en pantalla del input
@@ -50,8 +51,5 @@ boton.addEventListener("click", (event) => {
   ul.appendChild(liCreado);
 
   nTareas++;
-  if (nTareas > 0) {
-    noTasks.style.display = "none";
-  }
   pContadorTareas.textContent = nTareas;
 });
