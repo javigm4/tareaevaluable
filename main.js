@@ -31,7 +31,7 @@ boton.addEventListener("click", (event) => {
   let spanCreado = document.createElement("span");
 
   //aqui cogemos lo del textcontent del input
-  let textoSpan = document.querySelector("input[type='text']");
+  let textoSpan = document.querySelector("input[type='text']").value;
   spanCreado.textContent = textoSpan;
   let botonX = document.createElement("button");
   botonX.textContent = "X";
