@@ -49,5 +49,7 @@ boton.addEventListener("click", (event) => {
   ul.appendChild(liCreado);
   nTareas++;
 
-  console.log(nTareas);
+  if (nTareas > 0) {
+    pEmpty.textContent = "";
+  }
 });
