@@ -27,6 +27,15 @@ let nTareas = 0;
 boton.addEventListener("click", (event) => {
   event.preventDefault();
   let liCreado = document.createElement("li");
-  liCreado.textContent = "aaa";
+  let pCreado = document.createElement("p");
+  let spanCreado = document.createElement("span");
+  spanCreado.textContent = "aaa";
+  let botonX = document.createElement("button");
+  botonX.textContent = "X";
+
+  pCreado.appendChild(spanCreado);
+  pCreado.appendChild(botonX);
+  liCreado.appendChild(pCreado);
+
   ul.appendChild(liCreado);
 });
