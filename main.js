@@ -25,10 +25,6 @@ const ul = document.querySelector("ul");
 // el textcontent del span es lo que le metamos en pantalla del input
 let nTareas = 0;
 
-const pNoPendingTasks = document.querySelector(
-  "body > div > div-nth-of-type(4) > p"
-);
-
 boton.addEventListener("click", (event) => {
   event.preventDefault();
   let liCreado = document.createElement("li");
