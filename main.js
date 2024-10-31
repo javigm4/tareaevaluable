@@ -10,12 +10,10 @@ search.classList.add("search");
 const liContainer = document.querySelector("body > div > div:nth-of-type(3)");
 liContainer.classList.add("li-container");
 
-const noPending = document.querySelector("body > div > div:nth-of-type(4) > p");
-
-const taskCount = document.querySelector("body > div > div:nth-of-type(5)");
+const taskCount = document.querySelector("body > div > div:nth-of-type(4)");
 taskCount.classList.add("task-count");
 const contadorTareas = document.querySelector(
-  "body > div > div:nth-of-type(5) > span:nth-of-type(2)"
+  "body > div > div:nth-of-type(4)"
 );
 
 const boton = document.querySelector("body > div > div > form > button");
@@ -32,10 +30,6 @@ let nTareas = 0;
 
 boton.addEventListener("click", (event) => {
   event.preventDefault();
-
-  if (nTareas === 0) {
-    noPending.textContent = "";
-  }
   let liCreado = document.createElement("li");
   let pCreado = document.createElement("p");
   let spanCreado = document.createElement("span");
