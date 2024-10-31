@@ -45,5 +45,10 @@ boton.addEventListener("click", (event) => {
   pCreado.appendChild(botonX);
   liCreado.appendChild(pCreado);
 
+  const numberOfTasksSpan = document.querySelector(
+    "body > div > div:nth-of-type(5) > span:nth-of-type(2)"
+  );
+  numberOfTasksSpan.textContent = nTareas;
+
   ul.appendChild(liCreado);
 });
