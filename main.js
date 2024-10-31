@@ -51,5 +51,7 @@ boton.addEventListener("click", (event) => {
 
   if (nTareas > 0) {
     pEmpty.textContent = "";
+  } else {
+    pEmpty.textContent = "You have no pending tasks.";
   }
 });
