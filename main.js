@@ -10,10 +10,7 @@ search.classList.add("search");
 const liContainer = document.querySelector("body > div > div:nth-of-type(3)");
 liContainer.classList.add("li-container");
 
-const taskEmpty = document.querySelector("body > div > div:nth-of-type(4)");
-taskCount.classList.add("empty");
-
-const taskCount = document.querySelector("body > div > div:nth-of-type(5)");
+const taskCount = document.querySelector("body > div > div:nth-of-type(4)");
 taskCount.classList.add("task-count");
 
 const boton = document.querySelector("body > div > div > form > button");
