@@ -14,7 +14,7 @@ const empTy = document.querySelector("body > div > div:nth-of-type(4)");
 empTy.classList.add("empty");
 const pEmpty = document.querySelector("body > div > div:nth-of-type(4) p");
 //he intentado poner el del number of tasks pero al poner nth of type (5) los demas stylos no me cargan
-
+//el problema esta en las constantes, que no me las coge
 const boton = document.querySelector("body > div > div > form > button");
 boton.classList.add("btn-add");
 
@@ -47,4 +47,18 @@ boton.addEventListener("click", (event) => {
 
   ul.appendChild(liCreado);
   nTareas++;
+
+  /*
+
+
+  esto es lo que habría hecho si me funcionaran las constantes, pero no me da tiempo, ni sé cómo arreglarlas
+  if(nTareas > 0){
+    empTy.textContent =" ";
+  }
+
+  const numerotareas = document.querySelector("body > div > div:nth-of-type(5) > span:nth-of.type(2)");
+  numerotareas.textContent = nTareas.
+
+
+  */
 });
