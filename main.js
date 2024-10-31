@@ -13,6 +13,9 @@ liContainer.classList.add("li-container");
 const empTy = document.querySelector("body > div > div:nth-of-type(4)");
 empTy.classList.add("empty");
 
+const taskCount = document.querySelector("body > div > div:nth-of-type(5)");
+taskCount.classList.add("task-count");
+
 const boton = document.querySelector("body > div > div > form > button");
 boton.classList.add("btn-add");
 
