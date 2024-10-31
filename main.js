@@ -41,7 +41,6 @@ boton.addEventListener("click", (event) => {
   let botonX = document.createElement("button");
   botonX.classList.add("btn-delete");
   botonX.textContent = "X";
-  pEmpty.textContent = "afkoas";
 
   pCreado.appendChild(spanCreado);
   pCreado.appendChild(botonX);
@@ -49,4 +48,6 @@ boton.addEventListener("click", (event) => {
 
   ul.appendChild(liCreado);
   nTareas++;
+
+  console.log(nTareas);
 });
