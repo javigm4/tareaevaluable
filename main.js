@@ -13,7 +13,6 @@ liContainer.classList.add("li-container");
 const empTy = document.querySelector("body > div > div:nth-of-type(4)");
 empTy.classList.add("empty");
 const pEmpty = document.querySelector("body > div > div:nth-of-type(4) p");
-pEmpty.textContent = "prueba";
 //he intentado poner el del number of tasks pero al poner nth of type (5) los demas stylos no me cargan
 
 const boton = document.querySelector("body > div > div > form > button");
