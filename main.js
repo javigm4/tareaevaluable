@@ -15,5 +15,7 @@ liContainer.classList.add("li-container");
 const taskCount = document.querySelector("body > div > div.nth.of-type(3)");
 taskCount.classList.add("task-count");
 
+const boton = document.querySelector("body > div> form > button");
+boton.classList.add("btn-add");
 /*document.querySelector("body > div > div").classList.add("search");
 document.querySelector("body > div > div.nth.of-type(2)").classList.add("li-container");*/
