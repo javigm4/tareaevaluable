@@ -4,3 +4,4 @@ import "./style.css";
 
 /*se añade con .classList.add("")*/
 document.querySelector("body > div").classList.add("container");
+document.querySelector("body > div > div").classList.add("search");
