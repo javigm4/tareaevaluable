@@ -29,7 +29,10 @@ boton.addEventListener("click", (event) => {
   let liCreado = document.createElement("li");
   let pCreado = document.createElement("p");
   let spanCreado = document.createElement("span");
-  spanCreado.textContent = "aaa";
+
+  //aqui cogemos lo del textcontent del input
+  let textoSpan = document.querySelector("input[type='text']");
+  spanCreado.textContent = textoSpan;
   let botonX = document.createElement("button");
   botonX.textContent = "X";
 
@@ -38,4 +41,6 @@ boton.addEventListener("click", (event) => {
   liCreado.appendChild(pCreado);
 
   ul.appendChild(liCreado);
+
+  nTareas++;
 });
