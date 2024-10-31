@@ -22,17 +22,12 @@ const ul = document.querySelector("ul");
 // LI > P > SPAN + BUTTON (X )
 
 // el textcontent del span es lo que le metamos en pantalla del input
-
 let nTareas = 0;
 
 boton.addEventListener("click", (event) => {
   event.preventDefault();
-  let textoInput = input.value;
-
+  let textoInput = document.getElementById("input").value;
   let liCreado = document.createElement("li");
-  liCreado.textContent = textoInput;
-
+  liCreado.textContent = "aaa";
   ul.appendChild(liCreado);
-
-  input.value = "";
 });
