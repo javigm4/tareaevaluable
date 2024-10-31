@@ -30,10 +30,6 @@ const pNoPendingTasks = document.querySelector(
 );
 
 boton.addEventListener("click", (event) => {
-  if (nTareas === 0) {
-    taskCount.style.display = "none";
-  }
-
   event.preventDefault();
   let liCreado = document.createElement("li");
   let pCreado = document.createElement("p");
@@ -51,4 +47,8 @@ boton.addEventListener("click", (event) => {
   liCreado.appendChild(pCreado);
 
   ul.appendChild(liCreado);
+
+  if (nTareas === 0) {
+    taskCount.style.display = "none";
+  }
 });
