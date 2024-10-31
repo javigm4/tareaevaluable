@@ -48,6 +48,8 @@ boton.addEventListener("click", (event) => {
 
   ul.appendChild(liCreado);
 
+  nTareas++;
+
   if (nTareas === 0) {
     taskCount.style.display = "none";
   }
