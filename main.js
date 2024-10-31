@@ -14,6 +14,8 @@ const empTy = document.querySelector("body > div > div:nth-of-type(4)");
 empTy.classList.add("empty");
 const pEmpty = document.querySelector("body > div > div:nth-of-type(4) > p");
 
+//he intentado poner el del number of tasks pero al poner nth of type (5) los demas stylos no me cargan
+
 const boton = document.querySelector("body > div > div > form > button");
 boton.classList.add("btn-add");
 
@@ -27,9 +29,6 @@ const ul = document.querySelector("ul");
 let nTareas = 0;
 
 boton.addEventListener("click", (event) => {
-  if (nTareas > 0) {
-    pEmpty.textContent = " ";
-  }
   event.preventDefault();
   let liCreado = document.createElement("li");
   let pCreado = document.createElement("p");
@@ -47,5 +46,4 @@ boton.addEventListener("click", (event) => {
   liCreado.appendChild(pCreado);
 
   ul.appendChild(liCreado);
-  nTareas++;
 });
