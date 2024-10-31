@@ -1,21 +1,16 @@
 import "./style.css";
 
-/*-----VAMOS A AÑADIR LAS CLASES A LOS ELEMENTOS DEL INDEX.HTML ---*/
-
-/*se añade con .classList.add("")*/
 const container = document.querySelector("body > div");
 container.classList.add("container");
 
-const search = document.querySelector("body > div > div");
+const search = document.querySelector("body > div > div:first-of-type");
 search.classList.add("search");
 
-const liContainer = document.querySelector("body > div > div.nth.of-type(2)"); //coge el segundo que se llama div
+const liContainer = document.querySelector("body > div > div:nth-of-type(3)");
 liContainer.classList.add("li-container");
 
-const taskCount = document.querySelector("body > div > div.nth.of-type(3)");
+const taskCount = document.querySelector("body > div > div:nth-of-type(4)");
 taskCount.classList.add("task-count");
 
-const boton = document.querySelector("body > div> form > button");
+const boton = document.querySelector("body > div > div > form > button");
 boton.classList.add("btn-add");
-/*document.querySelector("body > div > div").classList.add("search");
-document.querySelector("body > div > div.nth.of-type(2)").classList.add("li-container");*/
