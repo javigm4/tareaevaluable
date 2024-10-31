@@ -12,9 +12,7 @@ liContainer.classList.add("li-container");
 
 const empTy = document.querySelector("body > div > div:nth-of-type(4)");
 empTy.classList.add("empty");
-
-const taskCount = document.querySelector("body > div > div:nth-of-type(5)");
-taskCount.classList.add("task-count");
+const pEmpty = document.querySelector("body > div > div:nth-of-type(4) > p");
 
 const boton = document.querySelector("body > div > div > form > button");
 boton.classList.add("btn-add");
@@ -29,6 +27,9 @@ const ul = document.querySelector("ul");
 let nTareas = 0;
 
 boton.addEventListener("click", (event) => {
+  if (nTareas > 0) {
+    pEmpty.textContent = " ";
+  }
   event.preventDefault();
   let liCreado = document.createElement("li");
   let pCreado = document.createElement("p");
